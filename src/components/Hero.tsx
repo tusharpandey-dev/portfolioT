@@ -244,13 +244,14 @@ const Hero = () => {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="mt-4 md:mt-0"
               >
-                <h2 className="text-base sm:text-lg text-primary font-medium mb-2">
-                  Hello, I'm
-                </h2>
-                <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
-                  Tushar
-                  <span className="text-gradient block">Kumar</span>
-                </h1>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl text-primary font-semibold mb-4">
+  Hello, I'm
+</h2>
+
+<h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-white mb-4 leading-tight">
+  Tushar
+  <span className="text-gradient block">Kumar</span>
+</h1>
               </motion.div>
 
               <motion.div

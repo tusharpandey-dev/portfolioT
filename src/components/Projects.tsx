@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import library from "../assets/library.jpg";
 import nikeStore from "../assets/nike-store.jpg";
 import iimage from "../assets/iimage.png";
-import youtube from "../assets/YouTube.png"
+import image from "../assets/image.png"
 
 const Projects = () => {
   const projects = [
@@ -33,13 +33,13 @@ const Projects = () => {
       gradient: "from-gray-700 to-black",
     },
     {
-      title: "You Tube clone",
+      title: "YouTube clone",
       description:
         "A YouTube clone built with React.js is a web application that mimics the functionality of YouTube. It allows users to upload, share, and watch videos, just like on the original platform",
       techStack: ["React","Animation"],
       github: "https://github.com/savagetushar/you-Tube-clone",
       demo: "https://you-tube-clone-brown.vercel.app/",
-      image: "youtube",
+      image: image,
       gradient: "from-gray-700 to-black",
     },
     {
