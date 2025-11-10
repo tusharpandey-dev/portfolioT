@@ -248,7 +248,7 @@ const Hero = () => {
   Hello, I'm
 </h2>
 
-<h1 className="text-10xl sm:text-10xl md:text-[12rem] lg:text-[18rem] font-extrabold text-white leading-none">
+<h1 className="text-4xl sm:text-5xl md:text-6xl text-primary font-semibold mb-5">
   <span className="text-gradient">Tushar Kumar</span>
 </h1>
               </motion.div>
