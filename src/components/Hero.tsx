@@ -249,7 +249,7 @@ const Hero = () => {
 </h2>
 
 <h1 className="text-10xl sm:text-10xl md:text-[12rem] lg:text-[18rem] font-extrabold text-white leading-none">
-  Hello, I am <span className="text-gradient">Tushar</span>
+  <span className="text-gradient">Tushar Kumar</span>
 </h1>
               </motion.div>
 
