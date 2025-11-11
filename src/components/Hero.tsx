@@ -49,7 +49,7 @@ const Hero = () => {
   Hello, I'm
 </h2>
 
-<h1 className="text-5xl font-bold text-white leading-tight">
+<h1 className="text-4xl font-bold text-white leading-tight">
   <span className="text-gradient">Tushar Kumar</span>
 </h1>
 
@@ -88,7 +88,7 @@ const Hero = () => {
                 </a>
               </Button>
 
-              <Button asChild size="lg" className="text-lg px-6 py-3 bg-gradient-primary text-black">
+              <Button asChild size="lg" className="text-lg px-6 py-3 bg-gradient-primary">
                 <a
                   href="https://drive.google.com/uc?export=download&id=1ulSOddlg0LxJtAz7mVvK964G5b1o2AyM"
                 >
@@ -100,13 +100,26 @@ const Hero = () => {
           </motion.div>
 
           {/* Profile Image */}
-          <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="flex justify-center">
-            <motion.div whileHover={{ scale: 1.05 }} className="relative w-96 h-96 rounded-full bg-gradient-primary p-1">
-              <div className="rounded-full bg-background p-2 w-full h-full">
-                <img src={profileImage} alt="tushar" className="rounded-full object-cover w-full h-full" />
-              </div>
-            </motion.div>
-          </motion.div>
+          <motion.div
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  className="flex justify-center"
+>
+  <motion.div
+    whileHover={{ scale: 1.05 }}
+    className="relative w-[420px] aspect-square rounded-full bg-gradient-primary p-1"
+  >
+    <div className="rounded-full overflow-hidden w-full h-full">
+      <img
+        src={profileImage}
+        alt="tushar"
+        className="w-full h-full object-cover object-top"
+      />
+      {/* If object-top crops too high, try:
+      className="w-full h-full object-cover object-[50%_20%]" */}
+    </div>
+  </motion.div>
+</motion.div>
         </div>
 
         {/* Mobile */}

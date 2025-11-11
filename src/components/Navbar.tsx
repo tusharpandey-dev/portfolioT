@@ -61,7 +61,7 @@ const Navbar = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="text-4xl font-bold text-gradient cursor-pointer"
+            className="text-xl font-bold text-gradient cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
             Portfolio
@@ -102,7 +102,7 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-white hover:text-primary transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -137,4 +137,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;
