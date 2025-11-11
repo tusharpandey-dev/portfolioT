@@ -45,11 +45,14 @@ const Hero = () => {
         <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-center">
           <motion.div className="space-y-6" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
             <div>
-              <h2 className="text-4xl text-primary font-semibold mb-4">Hello, I'm</h2>
+             <h2 className="text-3xl text-primary font-semibold mb-3">
+  Hello, I'm
+</h2>
 
-<h1 className="text-7xl font-extrabold text-white leading-tight">
+<h1 className="text-5xl font-bold text-white leading-tight">
   <span className="text-gradient">Tushar Kumar</span>
 </h1>
+
             </div>
 
             <div>
