@@ -37,27 +37,26 @@ const ThemeToggle = () => {
       whileTap={{ scale: 0.95 }}
       onClick={toggleTheme}
       className="
-        flex items-center justify-center gap-2
-        px-4 py-3 rounded-xl text-lg font-semibold
+        p-3 rounded-xl 
         transition-colors border 
-        bg-gray-100 text-gray-800 border-gray-400
+        bg-gray-100 text-gray-800 border-gray-300
         hover:bg-gray-200
-        dark:bg-gray-900 dark:text-white dark:border-gray-600
+        dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700
+        flex items-center justify-center
       "
       aria-label="Toggle theme"
     >
       <motion.div
         initial={false}
         animate={{ rotate: isDark ? 180 : 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.4 }}
       >
         {isDark ? (
-          <Sun className="h-6 w-6 text-yellow-400" />
+          <Sun className="h-7 w-7 text-yellow-400" />
         ) : (
-          <Moon className="h-6 w-6 text-gray-700" />
+          <Moon className="h-7 w-7 text-blue-600" />
         )}
       </motion.div>
-      <span>{isDark ? 'Light Mode' : 'Dark Mode'}</span>
     </motion.button>
   );
 };
