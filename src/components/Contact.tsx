@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/savagetushar",
+      value: "github.com/tusharpandey-dev",
       href: "https://github.com/tusharpandey-dev",
     },
     {
